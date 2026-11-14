@@ -31,6 +31,9 @@ jobs:
         # N64 cores
         dpkg -s nasm || sudo apt install -y nasm
 
+        # 3dengine
+        dpkg -s libvulkan-dev || sudo apt install -y libvulkan-dev
+
         # beetle-psx-hw
         dpkg -s libgl-dev || sudo apt install libgl-dev
 
