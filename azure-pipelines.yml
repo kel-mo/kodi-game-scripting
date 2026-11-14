@@ -92,6 +92,15 @@ jobs:
 
         # parallext
         dpkg -s libpng-dev || sudo apt install -y libpng-dev
+
+        # rpcs3
+        dpkg -s libcurl4-openssl-dev || sudo apt install -y libcurl4-openssl-dev
+        dpkg -s libegl-dev || sudo apt install -y libegl-dev
+        dpkg -s libgl-dev || sudo apt install -y libgl-dev
+        dpkg -s libglew-dev || sudo apt install -y libglew-dev
+        dpkg -s libvulkan-dev || sudo apt install -y libvulkan-dev
+        dpkg -s llvm-dev || sudo apt install -y llvm-dev
+        dpkg -s zlib1g-dev || sudo apt install -y zlib1g-dev
       addons:
         - yabause
         - yabasanshiro
@@ -133,6 +142,7 @@ jobs:
         - sameboy
         - same_cdi
         #- rustation # Disabled for now
+        - rpcs3
         - retro8
         - remotejoy
         - reminiscence
