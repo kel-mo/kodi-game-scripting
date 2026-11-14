@@ -89,6 +89,9 @@ jobs:
         #dpkg -s libcurl4-openssl-dev || sudo apt install -y libcurl4-openssl-dev
         #dpkg -s libgl-dev || sudo apt install -y libgl-dev
         #dpkg -s libopus-dev || sudo apt install -y libopus-dev
+
+        # parallext
+        dpkg -s libpng-dev || sudo apt install -y libpng-dev
       addons:
         - yabause
         - yabasanshiro
